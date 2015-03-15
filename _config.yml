@@ -6,7 +6,7 @@ url: "http://www.laskaridis.com" # the base hostname & protocol for your site
 theme:
   # Meta
   title: Lefteris Laskaridis
-  avatar: # avatar.png
+  avatar: me.jpg
   gravatar: # Email MD5 hash
   description: "Lefteris Laskaridis personal website" # used by search engines
   
@@ -26,7 +26,7 @@ theme:
   facebook: 
   flickr: 
   github: "laskaridis"
-  google_plus: 
+  google_plus: "+LefterisLaskaridis"
   instagram: 
   linkedin:  # Full URL
   pinterest: 
