@@ -13,7 +13,10 @@ theme:
   # Header and footer text
   header_text: >
     <h2>Hello!</h2>
-    <p>I'm Lefteris, a software engineer living and working in Athens, Greece.</p>
+    <p>
+      I'm Lefteris, a software engineer living and working in Athens, Greece.
+      <a href="http://www.laskaridis.com/about">About me.</a>
+    </p>
   footer_text: >
     Copyright 2015, Lefteris Laskaridis
   
