@@ -12,8 +12,9 @@ and implementation of distributed software systems.
 I am passionate about using technology to transform challenging problems
 into empowering solutions and crafting exciting ideas into beautiful products.
 
-For the past few years I am a part of a great team in [mytrip.com](http://www.mytrip.com),
-with whom I create new experiences for travellers around the world.
+For the past few years I am a part of a great team in e-Travel (the company
+behind [mytrip.com](http://www.mytrip.com)), with whom I create new experiences
+for travellers around the world.
 
 I earned my B.Sc. in computer science from University of Indianapolis. I am
 married and living in Athens, Greece.
