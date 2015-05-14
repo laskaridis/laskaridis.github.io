@@ -1,22 +1,31 @@
-var elements = document.getElementsByTagName('script')
+new WOW().init();
 
-Array.prototype.forEach.call(elements, function(element) {
-  if (element.type.indexOf('math/tex') != -1) {
-     // Extract math markdown
-     var textToRender = element.innerText || element.textContent;
-     
-    // Create span for KaTeX
-     var katexElement = document.createElement('span');
-     
-     // Support inline and display math
-     if (element.type.indexOf('mode=display') != -1){
-       katexElement.className += "math-display";
-       textToRender = '\\displaystyle {' + textToRender + '}';
-     } else {
-       katexElement.className += "math-inline";
-     }
-    
-     katex.render(textToRender, katexElement);
-     element.parentNode.insertBefore(katexElement, element);
-  }
+$(document).ready(function() {
+  $('.scrollable').click(function(e) {
+    $this = $(this);
+    target = $this.attr('href');
+    $.scrollTo($(target).offset().top - 30, 600);
+  });
+
+  $('#contact-form').parsley();
 });
+
+$(function(){
+  $(document).on( 'scroll', function(){
+    if ($(window).scrollTop() > 100) {
+      $('.scroll-top-wrapper').addClass('show');
+    } else {
+      $('.scroll-top-wrapper').removeClass('show');
+    }
+  });
+
+  $('.scroll-top-wrapper').on('click', scrollToTop);
+});
+
+function scrollToTop() {
+  verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+  element = $('body');
+  offset = element.offset();
+  offsetTop = offset.top;
+  $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+}

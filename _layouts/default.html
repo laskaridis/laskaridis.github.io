@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html class="no-js">
-
+<html lang="en">
   {% include head.html %}
-
   <body>
-    {% include header.html %}
+    {% include navigation.html %}
+    {% include hero.html %}
+    {% include about.html %}
+    {% include skills.html %}
+    {% include history.html %}
+    {% include contact.html %}
+    {% include footer.html %}
 
-    <div class="content">
-      {{ content }}
+    <div class="scroll-top-wrapper ">
+      <span class="scroll-top-inner">
+        <i class="fa fa-2x fa-chevron-circle-up"></i>
+      </span>
     </div>
 
-    {% include footer.html %}
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.0/jquery.scrollTo.min.js"></script>
+    <script src="http://parsleyjs.org/dist/parsley.min.js"></script>
+    <script src="{{ "/js/wow.min.js" | prepend: site.baseurl }}"></script>
+    <script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
   </body>
-  
 </html>
