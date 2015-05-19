@@ -3,30 +3,35 @@
 
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+// $navbar-inverse-bg: transparent;
 $navbar-inverse-bg: #303e49;
 $navbar-inverse-border: none;
 $navbar-inverse-link-color: #fff;
+// $navbar-inverse-link-hover-bg: #303e49;
 $navbar-inverse-link-hover-bg: darken($navbar-inverse-bg, 10%);
 $navbar-inverse-brand-color: #fff;
 $navbar-inverse-toggle-border-color: none;
 $navbar-inverse-toggle-hover-bg: #303e49;
 
+$border-radius-base: 0px;
+$border-radius-large: 0px;
+$border-radius-small: 0px;
+
 @import 'bootstrap';
 @import 'navigation';
 @import 'hero';
-@import 'about';
+@import 'about'; 
 @import 'skills';
 @import 'history';
 @import 'contact';
 @import 'footer';
 
 .body {
-  padding-top: 70px;
+  // padding-top: 70px;
 }
 
 .section-title {
   text-align: center;
-  // text-transform: uppercase;
   margin-bottom: 20px;
 }
 
