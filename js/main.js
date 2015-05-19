@@ -5,6 +5,7 @@ $(document).ready(function() {
     $this = $(this);
     target = $this.attr('href');
     $.scrollTo($(target).offset().top - 30, 600);
+    return false;
   });
 
   $('#contact-form').parsley();
