@@ -5,13 +5,23 @@ $(document).ready(function() {
     $this = $(this);
     target = $this.attr('href');
     $.scrollTo($(target).offset().top - 30, 600);
-    return false;
+    e.preventDefault();
+
+    if ($('.navbar-collapse').hasClass('in')){
+      $('.navbar-collapse').removeClass('in').addClass('collapse');
+    }
   });
 
   $('#contact-form').parsley();
 
+  $('#hero').height($(window).height()+50);
+
   $(window).load(function(){
     $('#page-loader').fadeOut(500);
+  });
+
+  $(window).resize(function(){
+    $('#hero').height($(window).height());
   });
 });
 
