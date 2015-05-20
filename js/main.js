@@ -9,6 +9,10 @@ $(document).ready(function() {
   });
 
   $('#contact-form').parsley();
+
+  $(window).load(function(){
+    $('#page-loader').fadeOut(500);
+  });
 });
 
 $(function(){

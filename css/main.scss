@@ -20,11 +20,12 @@ $border-radius-small: 0px;
 @import 'bootstrap';
 @import 'navigation';
 @import 'hero';
-@import 'about'; 
+@import 'about';
 @import 'skills';
 @import 'history';
 @import 'contact';
 @import 'footer';
+@import 'loader';
 
 .body {
   // padding-top: 70px;
