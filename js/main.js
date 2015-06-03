@@ -21,7 +21,7 @@ $(document).ready(function() {
   });
 
   $(window).resize(function(){
-    $('#hero').height($(window).height());
+    $('#hero').height($(window).height()+50);
   });
 });
 
