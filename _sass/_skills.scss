@@ -4,21 +4,21 @@ section#skills {
 }
 
 .skill-box {
+  text-align: center;
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
 .skill-icon {
-  float: left;
   margin-top: 5px;
 
   .icon-large {
-    font-size: 3em;
+    font-size: 3.5em;
   }
 }
 
-.skill-content {
-  padding-left: 60px;
+.section-subtitle {
+  text-align: center;
 }
 
 .skillbar {
