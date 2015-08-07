@@ -3,6 +3,24 @@ section#skills {
   padding: 15px 0px 15px;
 }
 
+.skill-box {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.skill-icon {
+  float: left;
+  margin-top: 5px;
+
+  .icon-large {
+    font-size: 3em;
+  }
+}
+
+.skill-content {
+  padding-left: 60px;
+}
+
 .skillbar {
   position: relative;
   display: block;
