@@ -1,14 +1,15 @@
 ---
 ---
 
+// Site colors
+$blue: #5C7A91;
+
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-// $navbar-inverse-bg: transparent;
 $navbar-inverse-bg: #303e49;
 $navbar-inverse-border: none;
 $navbar-inverse-link-color: #fff;
-// $navbar-inverse-link-hover-bg: #303e49;
-$navbar-inverse-link-hover-bg: darken($navbar-inverse-bg, 10%);
+$navbar-inverse-link-hover-color: #5bc0de;
 $navbar-inverse-brand-color: #fff;
 $navbar-inverse-toggle-border-color: none;
 $navbar-inverse-toggle-hover-bg: #303e49;
@@ -26,7 +27,9 @@ $section-padding: 9em 0;
 @import 'navigation';
 @import 'hero';
 @import 'about';
+@import 'services';
 @import 'skills';
+@import 'timeline';
 @import 'history';
 @import 'contact';
 @import 'footer';
@@ -36,9 +39,22 @@ $section-padding: 9em 0;
   // padding-top: 70px;
 }
 
+section {
+  padding: $section-padding;
+}
+
 .section-title {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 3.5em;
+  text-transform: uppercase;
+  color: $blue;
+}
+
+.section-divider {
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  border: solid 2px;
 }
 
 .scroll-top-wrapper {

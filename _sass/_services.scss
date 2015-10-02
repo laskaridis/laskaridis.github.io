@@ -1,0 +1,19 @@
+
+section#services {
+  .service-box {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .service-icon {
+    .icon-large {
+      font-size: 7em;
+      color: $blue;
+    }
+  }
+
+  .service-content {
+    color: $gray;
+  }
+}
+
