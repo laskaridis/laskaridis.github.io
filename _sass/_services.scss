@@ -1,19 +1,26 @@
 
 section#services {
   .service-box {
-    text-align: center;
     margin-bottom: 50px;
-  }
 
-  .service-icon {
-    .icon-large {
-      font-size: 7em;
-      color: $blue;
+    h4 {
+      color: $gray;
     }
   }
 
-  .service-content {
-    color: $gray;
+  .service-icon {
+    border: 10px solid $blue;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    font-size: 72px;
+    text-align: center;
+    line-height: 150px;
+    margin: 0 auto;
+
+    .icon-large {
+      color: $blue;
+    }
   }
 }
 
