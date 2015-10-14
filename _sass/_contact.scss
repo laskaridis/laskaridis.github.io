@@ -1,6 +1,12 @@
 
 section#contact {
   background-color: #acb7c0;
+  background: url(https://unsplash.com/photos/0S9ePdJG6Og/download) no-repeat center center fixed;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+  overflow: hidden;
 }
 
 .contact-icon {
@@ -19,8 +25,9 @@ section#contact {
   text-align: center;
   font-size: 21px;
   margin-right: 9px;
+  color: #fff;
 }
 
 .contact-info-link {
-  color: #303e49;
+  color: #fff;
 }
