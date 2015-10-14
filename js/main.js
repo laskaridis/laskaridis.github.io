@@ -1,6 +1,16 @@
 new WOW().init();
 
 $(document).ready(function() {
+
+  $('#skills').waypoint(function() {
+    $('.skillbar-bar').each(function() {
+      $this = $(this);
+      percent = $this.parent().attr('data-percent');
+      $this.animate({width: percent + '%'}, 'slow');
+    });
+  }, {offset: '80%'});
+
+
   $('.scrollable').click(function(e) {
     $this = $(this);
     target = $this.attr('href');
@@ -12,12 +22,12 @@ $(document).ready(function() {
     }
   });
 
-  $('#contact-form').parsley();
-
+  // Hero section size
   $('#hero').height($(window).height()+50);
 
+  // Page loader
   $(window).load(function(){
-    $('#page-loader').fadeOut(500);
+    $('#page-loader').fadeOut(200);
   });
 
   $(window).resize(function(){
