@@ -1,0 +1,12 @@
+<section id="posts">
+  <div class="container posts">
+    {% for post in site.posts %}
+    <article class="post">
+      <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title}}</a></h4>
+      <p>{{ post.excerpt }}</p>
+      <div class="date">{{ post.date | date: "%b %-d, %Y" }}</div>
+      <hr />
+    </article>
+    {% endfor %}
+  </div>
+</section>

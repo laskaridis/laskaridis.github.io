@@ -1,0 +1,21 @@
+
+<section id="post">
+  <div class="container">
+    <article class="post">
+      <div class="post-title text-center">
+        <h2>{{ page.title }}</h2>
+        <div class="meta">
+          {{ page.date | date: "%b %-d, %Y" }}
+        </div>
+        <div class="post-tags">
+          {{ page.tags | join: ', ' }}
+        </div>
+      </div>
+      <hr />
+      <div class="post-body">
+        {{ content }}
+      </div>
+    </article>
+    <hr />
+  </div>
+</section>
