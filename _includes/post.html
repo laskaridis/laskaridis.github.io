@@ -2,16 +2,26 @@
 <section id="post">
   <div class="container">
     <article class="post">
+
       <div class="post-title text-center">
+
         <h2>{{ page.title }}</h2>
-        <div class="meta">
+
+        <time class="post-date">
           {{ page.date | date: "%b %-d, %Y" }}
-        </div>
-        <div class="post-tags">
-          {{ page.tags | join: ', ' }}
-        </div>
+        </time>
+
+        <ul class="post-tags">
+          {% for tag in page.tags %}
+            <li class="post-tag">
+              <a href="#">{{ tag }}</a>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
+
       <hr />
+
       <div class="post-body">
         {{ content }}
       </div>

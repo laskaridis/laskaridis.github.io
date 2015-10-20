@@ -1,0 +1,39 @@
+
+section.post {
+
+  article.post {
+    .post-title {
+      a {
+        color: $gray;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+        &:visited {
+          color: $gray;
+        }
+      }
+
+      ul.post-tags {
+        font-size: 0.75rem;
+        list-style: none;
+        text-align: center;
+        text-transform: uppercase;
+
+        li.post-tag {
+          display: inline-block;
+          &:after {
+            content: ",";
+            display: inline-block;
+          }
+          &:last-child {
+            &:after {
+              content: "";
+            }
+          }
+        }
+      }
+    }
+  }
+}

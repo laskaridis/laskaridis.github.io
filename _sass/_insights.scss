@@ -1,0 +1,49 @@
+
+ul.post-tags {
+  padding-left: 0px;
+  font-size: 0.75em;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+
+  li.post-tag {
+    display: inline-block;
+    &:after {
+      content: ",";
+      display: inline-block;
+    }
+    &:last-child {
+      &:after {
+        content: "";
+      }
+    }
+  }
+}
+
+time.post-date {
+  color: $gray-light;
+}
+
+section#posts {
+
+  ul.post-tags {
+    margin-left: 1.5em;
+    display: inline-block;
+  }
+
+  article.mini-post {
+    .post-title {
+      a {
+        color: $gray;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+        &:visited {
+          color: $gray;
+        }
+      }
+
+    }
+  }
+}
