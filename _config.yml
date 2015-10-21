@@ -2,6 +2,8 @@
 baseurl: ""
 url: "http://www.laskaridis.com"
 
+permalink: /insights/:year/:month/:day/:title
+
 markdown: kramdown
 highlighter: pygments
 sass:
