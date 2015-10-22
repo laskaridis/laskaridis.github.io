@@ -50,6 +50,7 @@
 }
 
 .cd-timeline-img {
+  background-color: $blue;
   position: absolute;
   top: 0;
   left: 0;
@@ -98,16 +99,33 @@
   margin-left: 60px;
   background: white;
   padding: 1em;
-  box-shadow: 0 2px 0 #e0e0e0;
   color: $gray;
+  border-radius: 5px;
 }
 .cd-timeline-content:after {
   content: "";
   display: table;
   clear: both;
 }
-.cd-timeline-content h2 {
-  color: #303e49;
+.cd-timeline-content {
+  h2 {
+    font-size: 27px;
+    font-weight: 300;
+    color: #303e49;
+    margin-top: 0;
+
+    a {
+      color: #303e49;
+    }
+  }
+}
+.cd-timeline-content {
+  h3 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #303e49;
+    margin: 0;
+  }
 }
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
 }

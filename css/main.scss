@@ -55,6 +55,17 @@ section {
   margin-bottom: 30px;
 }
 
+@media (min-width: $screen-xs-min) {
+  .section-title {
+    font-size: 50px;
+  }
+}
+@media (min-width: $screen-sm-min) {
+  .section-title {
+    font-size: 50px;
+  }
+}
+
 .section-divider {
   width: 50px;
   padding: 0;

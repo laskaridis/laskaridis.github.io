@@ -3,8 +3,9 @@ section#services {
   .service-box {
     margin-bottom: 50px;
 
-    h4 {
-      color: $gray;
+    .service-title {
+      font-size: 25px;
+      font-weight: 300;
     }
   }
 
