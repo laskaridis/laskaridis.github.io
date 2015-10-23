@@ -9,10 +9,11 @@ section#skills {
   .section-subtitle {
     text-align: center;
     color: #fff;
+    font-size: 25px;
+    font-weight: 300;
   }
 }
 
-// $skillbar-color: #a3c644;
 $skillbar-color: $blue;
 $skillbar-background-color: #1D2E3B;
 $skillbar-height: 18px;
@@ -26,14 +27,16 @@ $skillbar-height: 18px;
 }
 
 .skillbar-title {
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 300;
+  // text-transform: uppercase;
   display: inline-block;
   color: $skillbar-color;
 }
 
 .skillbar-bar-percent {
-  font-weight: 600;
+  font-size: 21px;
+  font-weight: 300;
   float: right;
   display: inline-block;
   color: $skillbar-color;
@@ -43,7 +46,8 @@ $skillbar-height: 18px;
   height: $skillbar-height;
   background: $skillbar-color;
   transition-property: width, background-color;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.1)
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  border-radius: 3px;
 }
 
 .skillbar-bar::before {
@@ -53,6 +57,7 @@ $skillbar-height: 18px;
   position: absolute;
   width: 100%;
   z-index: -1;
-  box-shadow: inset 0 1px 2px rgba(0,0,0,.1)
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  border-radius: 3px;
 }
 
