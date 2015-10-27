@@ -25,11 +25,6 @@ $(document).ready(function() {
   // Hero section size
   $('#hero').height($(window).height()+50);
 
-  // Page loader
-  $(window).load(function(){
-    $('#page-loader').fadeOut(200);
-  });
-
   $(window).resize(function(){
     $('#hero').height($(window).height()+50);
   });
