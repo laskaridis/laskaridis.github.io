@@ -31,7 +31,17 @@ $(document).ready(function() {
 });
 
 $(function(){
-  $(document).on( 'scroll', function(){
+  $(document).on( 'scroll', function() {
+
+    // show navabar
+    if($(window).scrollTop() > 600) {
+      $('.navbar').fadeIn(300);
+    }
+    else {
+      $('.navbar').fadeOut(300);
+    }
+
+    // show scroller
     if ($(window).scrollTop() > 100) {
       $('.scroll-top-wrapper').addClass('show');
     } else {
