@@ -8,8 +8,7 @@
     left: 18px;
     height: 100%;
     width: 4px;
-    // background: #e0e0e0;
-    background: #fff;
+    background: $orange;
   }
 }
 
@@ -56,14 +55,14 @@
 }
 
 .cd-timeline-img {
-  background-color: $blue;
+  background-color: $orange;
   position: absolute;
   top: 0;
   left: 0;
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  // box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 
   img {
     display: block;
@@ -74,12 +73,6 @@
     top: 50%;
     margin-left: -12px;
     margin-top: -12px;
-  }
-  .cd-movie {
-    background: #c03b44;
-  }
-  .cd-location {
-    background: #f0ca45;
   }
 }
 
@@ -104,26 +97,25 @@
 .cd-timeline-content {
   position: relative;
   margin-left: 60px;
-  background: white;
+  background: $orange;
   padding: 1em;
-  color: $gray;
   border-radius: 5px;
 
   h2 {
     font-size: 27px;
     font-weight: 300;
-    color: $dark-blue;
+    color: #fff;
     margin-top: 0;
 
     a {
-      color: $dark-blue;
+      color: #fff;
     }
   }
 
   h3 {
     font-size: 17px;
     font-weight: 400;
-    color: $dark-blue;
+    color: #fff;
     margin: 0;
     text-transfrom: uppercase;
   }
@@ -146,7 +138,7 @@
     height: 0;
     width: 0;
     border: 7px solid transparent;
-    border-right: 7px solid white;
+    border-right: 7px solid $orange;
   }
 
   .cd-date {
@@ -167,7 +159,7 @@
     top: 24px;
     left: 100%;
     border-color: transparent;
-    border-left-color: white;
+    border-left-color: $orange;
   }
   .cd-timeline-content .cd-read-more {
     float: left;
@@ -186,7 +178,7 @@
     left: auto;
     right: 100%;
     border-color: transparent;
-    border-right-color: white;
+    border-right-color: $orange;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;

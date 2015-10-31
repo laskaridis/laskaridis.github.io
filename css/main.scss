@@ -3,21 +3,20 @@
 
 // Site colors
 $blue: #5C7A91;
-$red: #F53440;
 $purple: #523894;
-$purple-dark: #49318B;
 $light-blue: #337ab7;
 $dark-blue: #303e49;
+$orange: #E77245;
 
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$navbar-inverse-bg: #303e49;
+$navbar-inverse-bg: $dark-blue;
 $navbar-inverse-border: none;
 $navbar-inverse-link-color: #fff;
 $navbar-inverse-link-hover-color: #5bc0de;
 $navbar-inverse-brand-color: #fff;
 $navbar-inverse-toggle-border-color: none;
-$navbar-inverse-toggle-hover-bg: #303e49;
+$navbar-inverse-toggle-hover-bg: $dark-blue;
 
 $border-radius-base: 0px;
 $border-radius-large: 0px;
