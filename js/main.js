@@ -34,7 +34,7 @@ $(function(){
   $(document).on( 'scroll', function() {
 
     // show navabar
-    if($(window).scrollTop() > 600) {
+    if($(window).scrollTop() > $(window).height()) {
       $('.navbar').fadeIn(300);
     }
     else {
