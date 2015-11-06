@@ -53,31 +53,3 @@ section#contact {
     margin-bottom: 40px;
   }
 }
-
-section#social {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #D5573B;
-
-  .section-title {
-    color: #fff;
-  }
-
-  ul.social {
-    list-style: none;
-    text-align: center;
-    display: inline-block;
-    margin-bottom: 0;
-
-    li {
-      display: inline-block;
-      margin-right: 50px;
-
-      a {
-        color: #fff;
-        font-size: 21px;
-      }
-    }
-  }
-}
-
