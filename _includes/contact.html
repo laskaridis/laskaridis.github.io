@@ -1,6 +1,6 @@
 <section id="contact">
 <div class="container">
-  <h3 class="section-title" style="color: white;">Keep in touch</h3>
+  <h3 class="section-title">Keep in touch</h3>
   <div class="row">
     <div class="contact-info">
       <span class="contact-info-icon">
@@ -25,6 +25,42 @@
       <a href="tel:+306946434615" class="lead contact-info-link">
         +30 694 643 4615
       </a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 text-center">
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text"
+            class="form-control input-text"
+            name="name"
+            placeholder="What's your name?" required></input>
+        </div>
+        <div class="form-group">
+          <input type="text"
+            class="form-control input-text"
+            name="email"
+            placeholder="What's your email?" required></input>
+        </div>
+        <div class="form-group">
+          <input type="text"
+            class="form-control input-text"
+            name="phone"
+            placeholder="What's your phone number?" required></input>
+        </div>
+        <div class="form-group">
+          <textarea type="text"
+                    class="form-control input-text"
+                    name="message"
+                    rows="6" placeholder="How can i help?" required></textarea>
+        </div>
+        <a class="btn btn-send"
+           data-toggle="popover"
+           data-placement="top"
+           data-content="Sorry, the contact form is temporarily disabled.
+           In the mean time, you can send me an email or give me a call
+           to my mobile or skype using the links above this form.">Send email</a>
+      </form>
     </div>
   </div>
 </div>

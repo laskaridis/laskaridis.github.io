@@ -28,6 +28,8 @@ $(document).ready(function() {
   $(window).resize(function(){
     $('#hero').height($(window).height()+50);
   });
+
+  $('.btn-send').popover();
 });
 
 $(function(){
