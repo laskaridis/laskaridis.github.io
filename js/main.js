@@ -30,6 +30,13 @@ $(document).ready(function() {
   });
 
   $('.btn-send').popover();
+
+  $('#email-link').click(function(e) {
+    ga('send', 'event', {
+      'eventCategory': 'EmailLink',
+      'eventAction': 'clicked'
+    });
+  });
 });
 
 $(function(){
