@@ -73,14 +73,6 @@ $(document).ready(function() {
 $(function(){
   $(document).on( 'scroll', function() {
 
-    // show navabar
-    if($(window).scrollTop() > $(window).height()) {
-      $('.navbar').fadeIn(300);
-    }
-    else {
-      $('.navbar').fadeOut(300);
-    }
-
     // show scroller
     if ($(window).scrollTop() > 100) {
       $('.scroll-top-wrapper').addClass('show');
