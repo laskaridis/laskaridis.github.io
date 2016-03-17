@@ -8,8 +8,12 @@ $light-blue: #337ab7;
 $dark-blue: #303e49;
 $orange: #E77245;
 
+// Site fonts
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.875;
 
+// Navbar
 $navbar-inverse-bg: $dark-blue;
 $navbar-inverse-border: none;
 $navbar-inverse-link-color: #fff;
@@ -18,12 +22,10 @@ $navbar-inverse-brand-color: #fff;
 $navbar-inverse-toggle-border-color: none;
 $navbar-inverse-toggle-hover-bg: $dark-blue;
 
-$border-radius-base: 0px;
-$border-radius-large: 0px;
-$border-radius-small: 0px;
-
-$font-size-base: 16px;
-$line-height-base: 1.875;
+// Buttons
+$btn-default-color: #fff;
+$btn-default-bg: $orange;
+$btn-default-border: $orange;
 
 $section-padding: 9em 0;
 
