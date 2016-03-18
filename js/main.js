@@ -10,7 +10,6 @@ $(document).ready(function() {
     });
   }, {offset: '80%'});
 
-
   $('.scrollable').click(function(e) {
     $this = $(this);
     target = $this.attr('href');
