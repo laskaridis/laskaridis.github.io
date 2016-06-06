@@ -50,7 +50,11 @@ section#hero {
   width: 100%;
 }
 
-a.scroll i {
-  color: white;
-  font-size: 1.5em;
+a.scroll {
+  text-decoration: none;
+
+  i {
+    color: white;
+    font-size: 2em;
+  }
 }
