@@ -52,18 +52,9 @@ section#contact {
     margin-top: 20px;
     margin-bottom: 40px;
   }
-}
-
-section#social {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #D5573B;
-
-  .section-title {
-    color: #fff;
-  }
 
   ul.social {
+    padding-top: 60px;
     list-style: none;
     text-align: center;
     display: inline-block;
@@ -75,9 +66,8 @@ section#social {
 
       a {
         color: #fff;
-        font-size: 21px;
+        font-size: 18px;
       }
     }
   }
 }
-
