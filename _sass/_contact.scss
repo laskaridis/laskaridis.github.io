@@ -8,26 +8,20 @@ section#contact {
   }
 
   .contact-icon {
-    text-align: center;
-    font-size: 8em;
-  }
-
-  .contact-info {
-    display: block;
-    text-align: center;
-    margin-bottom: 12px;
-  }
-
-  .contact-info-icon {
-    display: inline-block;
-    text-align: center;
-    font-size: 21px;
-    margin-right: 9px;
     color: #fff;
+    font-size: 3em;
+    padding-top: 4px;
+    width: 100%;
   }
 
-  .contact-info-link {
+  .contact-text {
     color: #fff;
+    font-weight: 200;
+    font-size: 28px;
+
+    a {
+      color: #fff;
+    }
   }
 
   form#contact-form {
