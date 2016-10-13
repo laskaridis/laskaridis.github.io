@@ -30,56 +30,10 @@ $(document).ready(function() {
   });
 
   $('.btn-send').popover();
-
-  // Google analytics events
-  $('#email-link').click(function(e) {
-    ga('send', 'event', {
-      'eventCategory': 'EmailLink',
-      'eventAction': 'clicked'
-    });
-  });
-  $('#skype-link').click(function(e) {
-    ga('send', 'event', {
-      'eventCategory': 'SkypeLink',
-      'eventAction': 'clicked'
-    });
-  });
-  $('#phone-link').click(function(e) {
-    ga('send', 'event', {
-      'eventCategory': 'SkypeLink',
-      'eventAction': 'clicked'
-    });
-  });
-  $('#twitter-link').click(function(e) {
-    ga('send', 'event', {
-      'eventCategory': 'TwitterLink',
-      'eventAction': 'clicked'
-    });
-  });
-  $('#github-link').click(function(e) {
-    ga('send', 'event', {
-      'eventCategory': 'GithubLink',
-      'eventAction': 'clicked'
-    });
-  });
-  $('#google-link').click(function(e) {
-    ga('send', 'event', {
-      'eventCategory': 'GoogleLink',
-      'eventAction': 'clicked'
-    });
-  });
 });
 
 $(function(){
   $(document).on( 'scroll', function() {
-
-    // show navabar
-    if($(window).scrollTop() > $(window).height()) {
-      $('.navbar').fadeIn(300);
-    }
-    else {
-      $('.navbar').fadeOut(300);
-    }
 
     // show scroller
     if ($(window).scrollTop() > 100) {
