@@ -8,38 +8,11 @@ header {
   width: 100%;
 }
 
-#navigation {
-  margin-bottom: 0px;
-  width: 100%;
-  border: none;
-  display: block;
-  z-index: 999;
-  opacity: 1;
-  filter: alpha(opacity=100);
-  width: 100%;
-  background-color: #fff;
-
-  .navbar-brand {
-    font-weight: 400;
-    color: $orange;
-  }
-
-  a {
-    color: $dark-blue;
-    font-weight: 300;
-  }
-}
-
 .nav {
   text-align: center;
   li {
     a {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-left: 15px;
-      padding-right: 15px;
       text-transform: uppercase;
-      font-weight: 600px;
     }
   }
 }

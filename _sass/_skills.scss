@@ -3,14 +3,12 @@ section#skills {
   background-color: #303e49;
 
   .section-title {
-    color: #fff;
+    color: $orange;
   }
 
   .section-subtitle {
     text-align: center;
     color: #fff;
-    font-size: 25px;
-    font-weight: 300;
   }
 }
 
@@ -27,16 +25,11 @@ $skillbar-height: 18px;
 }
 
 .skillbar-title {
-  font-size: 21px;
-  font-weight: 300;
-  // text-transform: uppercase;
   display: inline-block;
   color: $skillbar-color;
 }
 
 .skillbar-bar-percent {
-  font-size: 21px;
-  font-weight: 300;
   float: right;
   display: inline-block;
   color: $skillbar-color;

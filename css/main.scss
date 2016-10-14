@@ -10,22 +10,30 @@ $orange: #E77245;
 
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$navbar-inverse-bg: $dark-blue;
-$navbar-inverse-border: none;
-$navbar-inverse-link-color: #fff;
-$navbar-inverse-link-hover-color: #5bc0de;
-$navbar-inverse-brand-color: #fff;
-$navbar-inverse-toggle-border-color: none;
-$navbar-inverse-toggle-hover-bg: $dark-blue;
+$navbar-default-bg: #fff;
+$navbar-default-border: none;
+$navbar-default-link-color: $dark-blue;
+$navbar-default-link-hover-color: $orange;
+$navbar-default-brand-color: $orange;
+$navbar-default-toggle-icon-bar-bg: $orange;
+$navbar-default-toggle-border-color: none;
+$navbar-default-toggle-hover-bg: #fff;
 
 $border-radius-base: 0px;
 $border-radius-large: 0px;
 $border-radius-small: 0px;
 
-$font-size-base: 16px;
+$font-size-base: 18px;
+$font-size-h1: floor(($font-size-base * 3));
+$font-size-h2: floor(($font-size-base * 2.5));
+$font-size-h3: floor(($font-size-base * 1.6));
 $line-height-base: 1.875;
+$font-weight: 400;
+$headings-font-weight: 300;
 
-$section-padding: 9em 0;
+$link-hover-decoration: none;
+
+$section-padding: 4em 0;
 
 @import 'bootstrap';
 @import 'navigation';
@@ -39,7 +47,7 @@ $section-padding: 9em 0;
 @import 'footer';
 
 .body {
-  // padding-top: 70px;
+  padding-top: 70px;
 }
 
 section {
@@ -47,7 +55,7 @@ section {
 }
 
 .section-title {
-  font-size: 50px;
+  font-size: 2.5em;
   font-weight: 100;
   text-align: center;
   margin-top: 0;
