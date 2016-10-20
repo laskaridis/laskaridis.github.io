@@ -1,7 +1,7 @@
 .full-window {
-    height: 100%;
-    width: 100%;
-    min-height: 480px;
+  height: 100%;
+  width: 100%;
+  min-height: 320px;
 }
 
 .vertical-center {
@@ -13,39 +13,63 @@
   align-items: center;
 }
 
-.cover {
-    background: $blue;
-    position: relative;
-    overflow: hidden;
-
-    .container-fluid {
-      height: 100%;
-
-      h1 {
-        color: $orange;
-      }
-      p {
-        color: #fff;
-      }
-
-      @extend .vertical-center;
-      @extend .text-center;
-
-      background: linear-gradient(0deg,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%);
-    }
+.full-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity .4s;
+  overflow: hidden;
 }
 
-.cover-image {
-    position: absolute;
-    width: 100%;
+.cover {
+  // background: $blue;
+  position: relative;
+  overflow: hidden;
+
+  .container-fluid {
+    // @extend .vertical-center;
+    // @extend .text-center;
     height: 100%;
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0;
-    -webkit-transition: opacity .4s;
-    -o-transition: opacity .4s;
-    // background-image: url(&quot;http://www.crit-research.it/wp-content/uploads/2015/06/Architettura_3.jpg&quot;); opacity: 1;nsition: opacity .4s;
+    padding: 0;
+
+    h1 {
+      color: $orange;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    .carousel {
+      height: 100%;
+
+      .carousel-inner {
+        height: 100%;
+
+        .item {
+          height: 100%;
+        }
+
+        .first-slide {
+          @extend .full-image;
+          background:
+          url(https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?dpr=1&auto=format&crop=entropy&fit=crop&w=767&h=509&q=80&cs=tinysrgb); opacity: 1;nsition: opacity .4s;
+        }
+        .second-slide {
+          @extend .full-image;
+          background:
+          url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?dpr=1&auto=format&crop=entropy&fit=crop&w=767&h=512&q=80&cs=tinysrgb); opacity: 1;nsition: opacity .4s;
+        }
+        .third-slide {
+          @extend .full-image;
+          background: url(https://images.unsplash.com/photo-1453133451515-5ff7c1d0d63c?dpr=1&auto=format&crop=entropy&fit=crop&w=1199&h=675&q=80&cs=tinysrgb); opacity: 1;nsition: opacity .4s;
+        }
+      }
+    }
+    // background: linear-gradient(0deg,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 100%);
+  }
 }

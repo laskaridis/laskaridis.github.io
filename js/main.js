@@ -26,7 +26,7 @@ $(document).ready(function() {
 var laskaridis = {
 
   toggleNavbarBackground: function() {
-    if($(document).scrollTop() > 560 ) {
+    if($(document).scrollTop() > 260 ) {
       $('nav[role="navigation"]').removeClass('navbar-transparent');
     } else {
       $('nav[role="navigation"]').addClass('navbar-transparent');
