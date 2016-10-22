@@ -53,6 +53,25 @@ body, html {
     position: relative;
 }
 
+section {
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  .section-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .section-divider {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    border: solid 2px;
+  }
+}
+
 .site {
     position: relative;
     left: 0;
@@ -60,24 +79,6 @@ body, html {
     min-height: 100%;
     padding: 50px 0 0 0;
     background: #fff;
-}
-
-section {
-  padding: $section-padding;
-}
-
-.section-title {
-  font-size: 2.5em;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.section-divider {
-  width: 50px;
-  padding: 0;
-  margin: 0;
-  border: solid 2px;
 }
 
 .scroll-top-wrapper {
