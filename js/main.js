@@ -1,29 +1,38 @@
-new WOW().init();
-
-$(document).ready(function() {
-
-  $('#skills').waypoint(function() {
-    $('.skillbar-bar').each(function() {
-      $this = $(this);
-      percent = $this.parent().attr('data-percent');
-      $this.animate({width: percent + '%'}, 'slow');
-    });
-  }, {offset: '80%'});
-
-
-  $('.scrollable').click(function(e) {
-    $this = $(this);
-    target = $this.attr('href');
-    $.scrollTo($(target).offset().top - 30, 600);
-    e.preventDefault();
-
-    if ($('.navbar-collapse').hasClass('in')){
-      $('.navbar-collapse').removeClass('in').addClass('collapse');
-    }
-  });
-});
 
 var laskaridis = {
+
+  initialize: function() {
+    new WOW().init();
+
+    $('#skills').waypoint(function() {
+      $('.skillbar-bar').each(function() {
+        $this = $(this);
+        percent = $this.parent().attr('data-percent');
+        $this.animate({width: percent + '%'}, 'slow');
+      });
+    }, {offset: '80%'});
+
+
+    $('.scrollable').click(function(e) {
+      $this = $(this);
+      target = $this.attr('href');
+      $.scrollTo($(target).offset().top - 30, 600);
+      e.preventDefault();
+
+      if ($('.navbar-collapse').hasClass('in')){
+        $('.navbar-collapse').removeClass('in').addClass('collapse');
+      }
+    });
+
+    $(document).on('scroll', function() {
+      laskaridis.toggleNavbarBackground();  
+      laskaridis.toggleScroller();
+    });
+
+    $('.scroll-top-wrapper').on('click', function() {
+      laskaridis.scrollToTop();
+    });
+  },
 
   toggleNavbarBackground: function() {
     if($(document).scrollTop() > 260 ) {
@@ -39,23 +48,17 @@ var laskaridis = {
     } else {
       $('.scroll-top-wrapper').removeClass('show');
     }
+  },
+
+  scrollToTop: function() {
+    verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+    element = $('body');
+    offset = element.offset();
+    offsetTop = offset.top;
+    $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
   }
 };
 
-
-$(function(){
-  $(document).on('scroll', function() {
-    laskaridis.toggleNavbarBackground();  
-    laskaridis.toggleScroller();
-  });
-
-  $('.scroll-top-wrapper').on('click', scrollToTop);
+$(document).ready(function() {
+  laskaridis.initialize();
 });
-
-function scrollToTop() {
-  verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
-  element = $('body');
-  offset = element.offset();
-  offsetTop = offset.top;
-  $('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
-}
