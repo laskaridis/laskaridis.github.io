@@ -1,7 +1,6 @@
 .cover {
   @include full-window;
-  @include full-image-background( "https://images.unsplash.com/photo-1445865272827-4894eb9d48de?dpr=1&auto=format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=" );
-  opacity: 0.9;
+  @include full-image-background( "https://images.unsplash.com/photo-1445620466293-d6316372ab59?dpr=1&auto=format&fit=crop&w=767&h=575&q=80&cs=tinysrgb&crop=" );
 
   padding: 0;
   margin: 0;
@@ -14,20 +13,20 @@
 
     h1 {
       color: $orange;
+      font-size: 3em;
     }
 
     p {
       color: #fff;
       font-weight: 300;
-
     }
 
     .typed-text {
-      // color: $orange;
+      color: $orange;
       font-weight: 400;
     }
     .typed-cursor {
-      // color: $orange;
+      color: $orange;
       font-weight: 400;
       opacity: 1;
       animation: blink 0.7s infinite;
