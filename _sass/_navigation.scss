@@ -1,18 +1,39 @@
+@mixin respond-to($media) {
+  @if $media == smartphones {
+    @media only screen and (max-width: $screen-xs-max) { @content; }
+  }
+  @if $media == tablets {
+    @media only screen and (min-width: $screen-sm-min) { @content; }
+  }
+  @if $media == desktops {
+    @media only screen and (min-width: $screen-md-min) { @content; }
+  }
+  @if $media == wide-screens {
+    @media only screen and (min-width: $screen-lg-min) { @content; }
+  }
+}
 
-header {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 100;
-  width: 100%;
+.navbar-fixed-top {
+  transition: all .5s .1s;
+}
+
+.navbar-default {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+  border-bottom: 1px solid transparent;
+  padding: 20px 60px 20px 20px;
+
+  @include respond-to(smartphones) {
+    background-color: #fff !important;
+    padding: 0 !important;
+  }
 }
 
 .nav {
   text-align: center;
-  li {
-    a {
-      text-transform: uppercase;
-    }
-  }
 }

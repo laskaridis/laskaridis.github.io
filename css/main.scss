@@ -2,17 +2,18 @@
 ---
 
 // Site colors
-$blue: #5C7A91;
-$purple: #523894;
-$light-blue: #337ab7;
+$blue: #3d69e7;
 $dark-blue: #303e49;
 $orange: #E77245;
+$light-gray: #b7bdc5;
+$white: #F7FFF7;
 
 $font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$brand-primary: $orange;
 
 $navbar-default-bg: #fff;
 $navbar-default-border: none;
-$navbar-default-link-color: $dark-blue;
+$navbar-default-link-color: $light-gray;
 $navbar-default-link-hover-color: $orange;
 $navbar-default-brand-color: $orange;
 $navbar-default-toggle-icon-bar-bg: $orange;
@@ -23,19 +24,18 @@ $border-radius-base: 0px;
 $border-radius-large: 0px;
 $border-radius-small: 0px;
 
-$font-size-base: 18px;
-$font-size-h1: floor(($font-size-base * 3));
-$font-size-h2: floor(($font-size-base * 2.5));
-$font-size-h3: floor(($font-size-base * 1.6));
-$line-height-base: 1.875;
-$font-weight: 400;
-$headings-font-weight: 300;
+$font-size-base: 16px;
+// $font-size-h1: floor(($font-size-base * 3));
+// $font-size-h2: floor(($font-size-base * 2.5));
+// $font-size-h3: floor(($font-size-base * 1.6));
+// $line-height-base: 1.875;
+// $font-weight: 400;
+// $headings-font-weight: 300;
 
 $link-hover-decoration: none;
 
-$section-padding: 4em 0;
-
 @import 'bootstrap';
+@import 'utilities';
 @import 'navigation';
 @import 'hero';
 @import 'about';
@@ -46,27 +46,22 @@ $section-padding: 4em 0;
 @import 'contact';
 @import 'footer';
 
-.body {
-  padding-top: 70px;
+body, html {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
 }
 
 section {
-  padding: $section-padding;
-}
+  padding-top: 3em;
+  padding-bottom: 3em;
 
-.section-title {
-  font-size: 2.5em;
-  font-weight: 100;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.section-divider {
-  width: 50px;
-  padding: 0;
-  margin: 0;
-  border: solid 2px;
+  .section-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
 }
 
 .scroll-top-wrapper {
