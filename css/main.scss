@@ -34,9 +34,8 @@ $font-size-base: 16px;
 
 $link-hover-decoration: none;
 
-$section-padding: 0;
-
 @import 'bootstrap';
+@import 'utilities';
 @import 'navigation';
 @import 'hero';
 @import 'about';
@@ -63,22 +62,6 @@ section {
     margin-top: 0;
     margin-bottom: 30px;
   }
-
-  .section-divider {
-    width: 50px;
-    padding: 0;
-    margin: 0;
-    border: solid 2px;
-  }
-}
-
-.site {
-    position: relative;
-    left: 0;
-    z-index: 2;
-    min-height: 100%;
-    padding: 50px 0 0 0;
-    background: #fff;
 }
 
 .scroll-top-wrapper {
