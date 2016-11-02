@@ -32,6 +32,13 @@ var laskaridis = {
     $('.scroll-top-wrapper').on('click', function() {
       laskaridis.scrollToTop();
     });
+
+    $('span.typed-text').typed({
+      strings: ["challenging problems", "exciting ideas"],
+      typeSpeed: 20,
+      backDelay: 3e3,
+      loop: !0,
+    });
   },
 
   toggleNavbarBackground: function() {
