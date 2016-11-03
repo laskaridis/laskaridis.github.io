@@ -28,9 +28,21 @@
   border-bottom: 1px solid transparent;
   padding: 20px 60px 20px 20px;
 
+  .nav {
+    a {
+      color: #fff !important;
+    }
+  }
+
   @include respond-to(smartphones) {
     background-color: #fff !important;
     padding: 0 !important;
+
+    .nav {
+      a {
+        color: $dark-blue !important;
+      }
+    }
   }
 }
 
