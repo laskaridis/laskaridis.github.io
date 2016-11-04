@@ -65,6 +65,19 @@
     }
   }
 
+  .arrow-down {
+    position: absolute;
+    bottom: 0.2em;
+    display: block;
+    text-align: center;
+    width: 100%;
+
+    a {
+      color: #fff;
+      font-size: 1.5em;
+    }
+  }
+
   .container-fluid {
     height: 100%;
   }
