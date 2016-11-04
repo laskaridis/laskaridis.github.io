@@ -35,8 +35,9 @@ section#about {
       margin-right: 25px;
 
       a {
-        color: #fff;
-        font-size: 18px;
+        &:hover {
+          color: $light-gray;
+        }
       }
     }
   }
