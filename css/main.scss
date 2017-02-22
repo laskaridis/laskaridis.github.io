@@ -58,6 +58,7 @@ section {
 
   h2 {
     font-size: 58px;
+    color: $gray;
 
     @include respond-to(tablets) {
       font-size: 48px;
