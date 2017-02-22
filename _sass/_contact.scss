@@ -7,20 +7,26 @@ section#contact {
     color: $orange;
   }
 
-  .contact-icon {
+  .contact-item {
+    margin-bottom: 50px;
+  }
+
+  i {
     color: $orange;
-    font-size: 3em;
+    font-size: 40px;
     padding-top: 4px;
     width: 100%;
   }
 
-  .contact-text {
-    color: $light-gray;
-    font-weight: 200;
+  h3 {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 
-    a {
-      color: $light-gray;
-    }
+  a {
+    font-size: 21px;
+    font-weight: 300;
   }
 
   form#contact-form {
