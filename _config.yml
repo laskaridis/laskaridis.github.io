@@ -1,5 +1,5 @@
 baseurl: ""
-url: "http://www.laskaridis.com"
+url: "https://www.laskaridis.com"
 
 markdown: kramdown
 highlighter: pygments
