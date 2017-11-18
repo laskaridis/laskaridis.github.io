@@ -1,6 +1,6 @@
 .cover {
   @include full-window;
-  @include full-image-background( "../images/hero.jpeg" );
+  @include full-image-background( "https://images.unsplash.com/photo-1507097489474-c9212a8f8597?auto=format&fit=crop&w=1051&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" );
 
   padding: 0;
   margin: 0;
