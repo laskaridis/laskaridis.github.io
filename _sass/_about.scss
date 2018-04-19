@@ -1,11 +1,5 @@
 
 section#about {
-  background-color: #303e49;
-
-  .section-title {
-    color: $orange;
-  }
-
   .picture-frame {
     display: block;
     vertical-align: middle;
@@ -14,10 +8,6 @@ section#about {
     max-width: 236px;
     transform: rotate(-5deg);
     box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
-  }
-
-  p {
-    color: #fff;
   }
 
   .social-links {

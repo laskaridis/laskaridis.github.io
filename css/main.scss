@@ -31,13 +31,14 @@ body, html {
     position: relative;
 }
 
-section {
+.section {
   padding-top: 3em;
   padding-bottom: 3em;
 
-  h2 {
+  .section__title {
     font-size: 58px;
     color: $gray;
+    text-align: center;
 
     @include respond-to(tablets) {
       font-size: 48px;
@@ -48,6 +49,25 @@ section {
 
     margin-top: 0;
     margin-bottom: 30px;
+  }
+
+  .section__title--left-aligned {
+    text-align: left;
+  }
+
+  .section__subtitle {
+  }
+}
+
+.section--inverted {
+  background-color: #303e49;
+
+  p {
+    color: $white;
+  }
+
+  .section__title {
+    color: $orange;
   }
 }
 
