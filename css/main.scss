@@ -55,6 +55,7 @@ body, html {
   }
 
   .section__subtitle {
+    text-align: center;
   }
 }
 
@@ -67,6 +68,10 @@ body, html {
 
   .section__title {
     color: $orange;
+  }
+
+  .section__subtitle {
+    color: $white;
   }
 }
 
