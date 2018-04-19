@@ -1,9 +1,13 @@
 
+$service-icon-color: $orange;
+$service-title-color: $gray;
+$service-subtitle-color: $gray;
+
 .service {
   margin-bottom: 2.5em;
 
   .service__icon {
-    border: 10px solid $orange;
+    border: 10px solid $service-icon-color;
     border-radius: 50%;
     width: 160px;
     height: 160px;
@@ -11,16 +15,17 @@
     text-align: center;
     line-height: 150px;
     margin: 0 auto;
-    color: $orange;
+    color: $service-icon-color;
   }
 
   .service__title {
-    color: $gray;
-    text-align: center;
   }
 
   .service__subtitle {
-    color: $gray;
-    text-align: center;
   }
 }
+
+.service--centered {
+  text-align: center;
+}
+

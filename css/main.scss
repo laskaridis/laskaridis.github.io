@@ -37,7 +37,6 @@ body, html {
   .section__title {
     font-size: 58px;
     color: $gray;
-    text-align: center;
 
     @include respond-to(tablets) {
       font-size: 48px;
@@ -50,12 +49,8 @@ body, html {
     margin-bottom: 30px;
   }
 
-  .section__title--left-aligned {
-    text-align: left;
-  }
-
-  .section__subtitle {
-    text-align: center;
+  .section__title--left {
+    text-align: left !important;
   }
 }
 
@@ -74,6 +69,18 @@ body, html {
     color: $white;
   }
 }
+
+.section--centered {
+
+  .section__title {
+    text-align: center;
+  }
+
+  .section__subtitle {
+    text-align: center;
+  }
+}
+
 
 .scroll-top-wrapper {
   position: fixed;
