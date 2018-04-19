@@ -1,0 +1,27 @@
+
+.panel {
+  background: $light-gray;
+  padding: 40px 60px;
+  border-radius: 6px;
+  width: 40em;
+  margin: 50px auto;
+  max-width: 100%;
+
+  .panel__header {
+  }
+
+  .panel__content {
+  }
+}
+
+.panel--inverted {
+  background: $dark-blue;
+
+  .panel__header {
+    color: $orange;
+  }
+
+  .panel__content {
+    color: $white;
+  }
+}
