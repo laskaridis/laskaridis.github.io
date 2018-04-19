@@ -1,41 +1,11 @@
 ---
 ---
 
-// Site colors
-$gray: #6d6d6d;
-$blue: #334959;
-$dark-blue: #303e49;
-$orange: #E77245;
-$light-gray: #b7bdc5;
-$white: #F7FFF7;
-
-$brand-primary: $orange;
-
-// typography
-$font-family-sans-serif: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size-base: 16px;
-// $line-height-base: 1.875;
-$font-weight: 400;
-$headings-font-weight: 300;
-
-// navbar
-$navbar-default-bg: #fff;
-$navbar-default-border: none;
-$navbar-default-link-color: $gray;
-$navbar-default-link-hover-color: $orange;
-$navbar-default-brand-color: $orange;
-$navbar-default-toggle-icon-bar-bg: $orange;
-$navbar-default-toggle-border-color: none;
-$navbar-default-toggle-hover-bg: #fff;
-
-$border-radius-base: 0px;
-$border-radius-large: 0px;
-$border-radius-small: 0px;
-
-$link-hover-decoration: none;
-
-@import 'bootstrap';
+@import 'colors';
+@import 'typography';
 @import 'utilities';
+@import 'overrides';
+@import 'bootstrap';
 @import 'navigation';
 @import 'hero';
 @import 'about';
@@ -45,6 +15,14 @@ $link-hover-decoration: none;
 @import 'history';
 @import 'contact';
 @import 'footer';
+
+.circle {
+  border-radius: 100% !important;
+  display: inline-block;
+  list-style-type: circle;
+  padding: 4.2em;
+}
+
 
 body, html {
     height: 100%;
