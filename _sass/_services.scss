@@ -1,32 +1,26 @@
 
-section#services {
+.service {
+  margin-bottom: 2.5em;
 
-  .service-box {
-    margin-bottom: 2.5em;
-  }
-
-  .service-icon {
+  .service__icon {
     border: 10px solid $orange;
     border-radius: 50%;
     width: 160px;
     height: 160px;
     font-size: 72px;
-
     text-align: center;
     line-height: 150px;
     margin: 0 auto;
-
-    .icon-large {
-      color: $orange;
-    }
+    color: $orange;
   }
 
-  h3 {
+  .service__title {
     color: $gray;
+    text-align: center;
   }
 
-  p {
+  .service__subtitle {
     color: $gray;
+    text-align: center;
   }
 }
-
