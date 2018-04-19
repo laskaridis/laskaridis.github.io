@@ -5,7 +5,7 @@ var laskaridis = {
     new WOW().init();
 
     $('#skills').waypoint(function() {
-      $('.skillbar-bar').each(function() {
+      $('.skillbar__bar').each(function() {
         $this = $(this);
         percent = $this.parent().attr('data-percent');
         $this.animate({width: percent + '%'}, 'slow');

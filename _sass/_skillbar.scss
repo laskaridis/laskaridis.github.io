@@ -1,0 +1,43 @@
+
+$skillbar-color: $orange;
+$skillbar-background-color: #1D2E3B;
+$skillbar-height: 18px;
+
+.skillbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  z-index: 20;
+
+  .skillbar__title {
+    display: inline-block;
+    color: $skillbar-color;
+  }
+
+  .skillbar__value {
+    float: right;
+    display: inline-block;
+    color: $skillbar-color;
+  }
+
+  .skillbar__bar {
+    height: $skillbar-height;
+    background: $skillbar-color;
+    transition-property: width, background-color;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    border-radius: 3px;
+
+    &::before {
+      background: $skillbar-background-color;
+      content: "";
+      height: $skillbar-height;
+      position: absolute;
+      width: 100%;
+      z-index: -1;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+      border-radius: 3px;
+    }
+  }
+}
+
